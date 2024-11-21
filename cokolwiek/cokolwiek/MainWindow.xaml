@@ -10,5 +10,12 @@
         <TextBox x:Name="testText" Foreground="CadetBlue" Margin="20" Padding="10" FontSize="24" FontFamily="Verdana">77</TextBox>
         <TextBlock Text="{Binding ElementName=testText, Path=Text}" Margin="20" Padding="10"></TextBlock>
         <TextBlock Text="{Binding ElementName=testText, Path=Text.Length}"></TextBlock>
-    </StackPanel> 
+        <Label x:Name="powitanie" Content="{Binding Powitanie}"/>
+        <Button Click="Change_Text_Button">Change text</Button>
+        <TextBlock>podaj liczbę</TextBlock>
+        <TextBox x:Name="firstNumber"></TextBox>
+        <TextBlock>podaj drugą liczbę</TextBlock>
+        <TextBox x:Name="secondNumber"></TextBox>
+        <Button Click="Button_Click">Dodaj</Button>
+    </StackPanel>
 </Window>
